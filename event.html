@@ -15,11 +15,17 @@ gtag('config', 'G-C3B467L6PF');
 </script>
 <script>
 function trackCTA(){
+
+	document.addEventListener("mouseover", function(){
+
+	var hover=document.querySelector(".hover");
+		console.log(123123)
+});
 	// 送出事件紀錄
 	gtag("event", "點擊", {
 		"event_category":"CTA",
 		"event_label":"頁面標題",
-		"value": 1
+		"value": 1,
 	});
 	alert("Event Sent!");
 }
@@ -27,6 +33,6 @@ function trackCTA(){
 </head>
 <body>
 	追蹤網頁瀏覽次數
-	<button onclick="trackCTA();">Call to Action</button>
+	<button class="hover" onclick="trackCTA();">Call to Action</button>
 </body>
 </html>
