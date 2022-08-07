@@ -15,13 +15,6 @@ gtag('config', 'G-C3B467L6PF');
 </script>
 <script>
 function trackCTA(){
-	document.addEventListener("mouseover", function(){
-        	gtag("event", "mouseover", {
-		"event_category":"mouseover",
-		"event_label":"滑鼠移動",
-		"value": 1
-	});
-	});
 	// 送出事件紀錄
 	gtag("event", "點擊", {
 		"event_category":"click",
