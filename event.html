@@ -16,8 +16,9 @@ gtag('config', 'G-C3B467L6PF');
 <script>
 function trackCTA(){
 	// 送出事件紀錄
-	gtag("event", "點擊", {
-		"event_category":"click",
+	document.queryselector(".mouseover").onmouseover = function() {
+	gtag("event", "滑動", {
+		"event_category":"mouseover",
 		"event_label":"頁面標題",
 		"value": 1
 	});
@@ -27,6 +28,6 @@ function trackCTA(){
 </head>
 <body>
 	追蹤網頁瀏覽次數
-	<button class="hover" onclick="trackCTA();">Call to Action</button>
+	<button class="mouseover" onclick="trackCTA();">Call to Action</button>
 </body>
 </html>
