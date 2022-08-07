@@ -17,7 +17,11 @@ gtag('config', 'G-C3B467L6PF');
 function trackCTA(){
 	document.addEventListener("mouseover", function(){
 	var hover=document.querySelector(".hover");
-	console.log(123)
+        	gtag("event", "mouseover", {
+		"event_category":"mouseover",
+		"event_label":"滑鼠移動",
+		"value": 1
+	});
 	});
 	// 送出事件紀錄
 	gtag("event", "點擊", {
