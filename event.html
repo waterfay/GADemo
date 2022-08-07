@@ -15,18 +15,16 @@ gtag('config', 'G-C3B467L6PF');
 </script>
 <script>
 function trackCTA(){
-
 	document.addEventListener("mouseover", function(){
-
 	var hover=document.querySelector(".hover");
-	mouseover=1;
-});
+	console.log(123)
+	});
 	// 送出事件紀錄
 	gtag("event", "點擊", {
 		"event_category":"click",
 		"event_label":"頁面標題",
 		"value": 1,
-		"mouseover":mouseover
+		"mouseover":mouseover;
 	});
 	alert("Event Sent!");
 }
