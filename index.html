@@ -19,6 +19,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 // gtag('config', 'G-C3B467L6PF');
         window.onload = function () {
+             
+                     window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'title': 'GADemo'
+        });
+             
             let btn = document.querySelectorAll(".btn-primary");
             for (let i = 0; i < btn.length; i++) {
                 btn[i].addEventListener("click", function () {
